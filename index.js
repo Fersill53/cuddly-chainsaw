@@ -52,3 +52,13 @@ function generateLogo() {
             }
         })
 }
+
+function saveLogoToFile(svg, filename) {
+    fs.writeFile(filename, svg, (err) => {
+      if (err) {
+        console.error(chalk.red(`Error saving file: ${err.message}`));
+      } else {
+        console.log(chalk.green(`Logo saved to ${filename}`));
+      }
+    });
+  }
