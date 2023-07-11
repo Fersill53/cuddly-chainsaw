@@ -51,7 +51,21 @@ function generateLogo() {
                         console.error(chalk.red('Invalid Shape Selected'));
                         return;
             }
+
+            const svg = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+              ${shape.draw()}
+              <text x="50%" y="50%" text-anchor="middle" fill="black" dy=".3em">${answers.text}</text>
+            </svg>
+          `;
+
+          saveLogoToFile(svg, answers.filename);
+
         })
+
+        .catch((err)=> {
+            console.error(chalk.red('Error creating logo: ${err.message}'));
+        });
 }
 
 function saveLogoToFile(svg, filename) {
@@ -63,5 +77,7 @@ function saveLogoToFile(svg, filename) {
       }
     });
   }
+
+  
 
   generateLogo()
