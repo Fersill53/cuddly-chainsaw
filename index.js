@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const chalk = require('chalk');
+const {Triangle, Circle, Square} = require('./Library/shapes');
 
 function generateLogo() {
     inquirer
@@ -9,7 +10,7 @@ function generateLogo() {
                 type: 'list',
                 name: 'shape',
                 message: 'Select a shape',
-                choice: ['Triangle, Circle, Square'],
+                choices: ['Triangle', 'Circle', 'Square'],
             },
 
             {
@@ -62,3 +63,5 @@ function saveLogoToFile(svg, filename) {
       }
     });
   }
+
+  generateLogo()
