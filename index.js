@@ -15,14 +15,20 @@ function generateLogo() {
 
             {
                 type: 'input',
-                name: 'color',
-                message: 'Enter a color',
+                name: 'shape color',
+                message: 'Enter a color for the shape',
             },
 
             {
                 type: 'input',
                 name: 'text',
                 message: 'Enter logo text',
+            },
+
+            {
+                type: 'input',
+                name: 'text color',
+                message: 'Enter text color',
             },
 
             {
