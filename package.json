@@ -1,0 +1,20 @@
+{
+  "name": "cuddly-chainsaw",
+  "version": "1.0.0",
+  "description": "Create a logo through user provided information utilizing the command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fersill53/cuddly-chainsaw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fersill53/cuddly-chainsaw/issues"
+  },
+  "homepage": "https://github.com/Fersill53/cuddly-chainsaw#readme"
+}
