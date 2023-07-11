@@ -36,3 +36,5 @@ class Square extends shape {
         return `<rect width="100" height="100" fill="${this.color}" />`;
     }
 }
+
+module.exports = {Triangle, Circle, Square};
