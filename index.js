@@ -59,9 +59,8 @@ function generateLogo() {
             }
 
             const svg = `
-            <svg xmlns="https://www.w3.org/TR/SVG2/
-            " width="200" height="200">
-              ${shape.draw()}
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+              ${shape.render()}
               <text x="50%" y="50%" text-anchor="middle" fill="black" dy=".3em">${answers.text}</text>
             </svg>
           `;
