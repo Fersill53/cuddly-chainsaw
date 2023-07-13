@@ -90,6 +90,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const {Circle, Square, Triangle} = require('./Library/shapes');
+const { exec } = require('child_process');
 
 inquirer
     .prompt([
@@ -154,6 +155,7 @@ inquirer
                 console.log('Error saving the SVG file:', err);
             } else {
                 console.log('SVG saved as ${fileName}');
+                exec(`open ${fileName}`);
             }
         });
 
