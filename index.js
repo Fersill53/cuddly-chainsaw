@@ -92,7 +92,7 @@ const fs = require('fs');
 const {Circle, Square, Triangle} = require('./Library/shapes');
 
 inquirer
-    .Prompt([
+    .prompt([
         {
             type: 'list',
             name: 'shape',
