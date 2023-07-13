@@ -148,4 +148,13 @@ inquirer
 
         const logo = shape.render(answers.text);
 
-    })
+        const fileName = `./${answers.fileName}.svg`;
+        fs.writeFile(fileName, logo, (err) =>{
+            if (err) {
+                console.log('Error saving the SVG file:', err);
+            } else {
+                console.log('SVG saved as ${fileName}');
+            }
+        });
+
+    });
