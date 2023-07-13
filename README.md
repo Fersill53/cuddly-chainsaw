@@ -11,7 +11,7 @@ This project was to allow us to solidify all the work from the previous weeks to
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
-- [Video](Video)
+- [Video](#video)
 
 ## Installation
 To install this project vs code or other programs similar is required to run the code. node needs to have been installed. Other required packages such as fs and inquirer are also needed but can be installed through the command line.
