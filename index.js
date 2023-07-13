@@ -115,7 +115,7 @@ inquirer
 
         {
             type: 'input',
-            name: 'Text color',
+            name: 'textColor',
             message: 'Enter a color for your text:',
         },
 
@@ -132,15 +132,15 @@ inquirer
 
         switch (answers.shape) {
             case 'Circle':
-                shape = new Circle(answers.color);
+                shape = new Circle(answers.color, answers.textColor);
                 break;
 
             case 'Square':
-                shape = new Square(answers.color);
+                shape = new Square(answers.color, answers.textColor);
                 break;
 
             case 'Triangle':
-                shape = new Triangle(answers.color);
+                shape = new Triangle(answers.color, ansers.textColor);
                 break;
             default:
                 console.log('Invalid shape selection');
