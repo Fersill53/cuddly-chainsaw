@@ -140,7 +140,7 @@ inquirer
                 break;
 
             case 'Triangle':
-                shape = new Triangle(answers.color, ansers.textColor);
+                shape = new Triangle(answers.color, answers.textColor);
                 break;
             default:
                 console.log('Invalid shape selection');
