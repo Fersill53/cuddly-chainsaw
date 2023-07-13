@@ -132,15 +132,15 @@ inquirer
 
         switch (answers.shape) {
             case 'Circle':
-                shape = new Circle(answers.color, answers.textColor);
+                shape = new Circle(answers.shapeColor, answers.textColor);
                 break;
 
             case 'Square':
-                shape = new Square(answers.color, answers.textColor);
+                shape = new Square(answers.shapeColor, answers.textColor);
                 break;
 
             case 'Triangle':
-                shape = new Triangle(answers.color, answers.textColor);
+                shape = new Triangle(answers.shapeColor, answers.textColor);
                 break;
             default:
                 console.log('Invalid shape selection');
