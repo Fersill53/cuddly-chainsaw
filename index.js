@@ -103,7 +103,7 @@ inquirer
 
         {
             type: 'input',
-            name: 'Shape color',
+            name: 'shapeColor',
             message: 'Enter a color for your logo:',
         },
 
